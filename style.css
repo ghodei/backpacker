@@ -82,9 +82,9 @@ body {
 .jt-img-gal {
   border: solid white;
   display: inline-block;
-  margin-left: 45px;
-  margin-right: 100px;
-  width: 250px;
+  margin-left: auto;
+  margin-right: 50px;
+  width: 290px;
 }
 /* Galleries */
 .modal {
