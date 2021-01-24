@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Peru</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Backpacker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="colombia.html">Colombia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ecuador.html">Ecuador</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="peru.html">Peru</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bolivia.html">Bolivia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="argentina.html">Argentina</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chile.html">Chile</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+      <!-- Contents -->
+      <div class="gallery-container">
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid jt-per">
+          <div class="container media">
+            <img src="peru/per1.jpg" onclick="onClick(this)" class="jt-img-gal">
+            <div class="media-body">
+              <h1 class="jumbo-head">Peru</h1>
+              <p class="block-text">Peru is a country in South America that's home to a section of Amazon rainforest and Machu Picchu,
+                 an ancient Incan city high in the Andes mountains. The region around Machu Picchu, including the Sacred Valley, 
+                 Inca Trail and colonial city of Cusco, is rich in archaeological sites. On Peru’s arid Pacific coast is Lima, 
+                 the capital, with a preserved colonial center and important collections of pre-Columbian art.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Gallery -->
+        <div class="photos">
+        <div class="container1">
+          <img src="peru/per2.jpg" style="max-width:100%;cursor:pointer"
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per3.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per4.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per5.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per6.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per7.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per8.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per9.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per10.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per11.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per12.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per13.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per14.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div class="container1">
+          <img src="peru/per15.jpg" style="max-width:100%;cursor:pointer" 
+          onclick="onClick(this)" class="modal-hover-opacity">
+        </div>
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+        <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <div class="modal-content">
+          <img id="img01" style="max-width:100%">
+        </div>
+      </div>
+    </div>
+      <script>
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+      }
+      </script>
+  </body>
+</html>

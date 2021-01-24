@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Colombia</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html">Backpacker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="colombia.html">Colombia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ecuador.html">Ecuador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="peru.html">Peru</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bolivia.html">Bolivia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="argentina.html">Argentina</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="chile.html">Chile</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+      <!-- Contents -->
+      <div class="gallery-container">
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid jt-col">
+          <div class="container media">
+            <img src="colombia/col1.jpg" onclick="onClick(this)" class="jt-img-gal">
+            <div class="media-body">
+              <h1 class="jumbo-head">Colombia</h1>
+              <p class="block-text">Colombia is one of the world's 17 megadiverse countries and has the second-highest level of biodiversity in the world. 
+                Its territory encompasses Amazon rainforest, highlands, grasslands, and deserts, and it is the only country in South America with coastlines
+                 and islands along both the Atlantic and Pacific.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Gallery -->
+        <div class="photos">
+          <div class="container1">
+            <img src="colombia/col2.jpg" style="max-width:100%;cursor:pointer"
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col3.jpg" style="max-width:100%;cursor:pointer"
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col4.jpg" style="max-width:100%;cursor:pointer"
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col5.jpg" style="max-width:100%;cursor:pointer"
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col6.jpg" style="max-width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col7.jpg" style="max-width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col8.jpg" style="max-width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col9.jpg" style="max-width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col10.jpg" style="max-width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col11.jpg" style="max-width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col12.jpg" style="max-width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col13.jpg" style="max-width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col14.jpg" style="max-width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div class="container1">
+            <img src="colombia/col15.jpg" style="max-width:100%;cursor:pointer" 
+            onclick="onClick(this)" class="modal-hover-opacity">
+          </div>
+          <div id="modal01" class="modal" onclick="this.style.display='none'">
+          <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <div class="modal-content">
+            <img id="img01" style="max-width:100%">
+          </div>
+        </div>
+      </div>
+      <script>
+        function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("modal01").style.display = "block";
+        }
+      </script>
+  </body>
+</html>
